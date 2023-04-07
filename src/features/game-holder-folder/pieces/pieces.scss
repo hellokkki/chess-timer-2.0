@@ -1,0 +1,39 @@
+.little-chess-names {
+    font-size: .7rem;
+}
+
+.notation-box {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.moves-box {
+    display: flex;
+}
+
+.black-pieces {
+    display: flex;
+}
+
+.numbers-box {
+    display: flex;
+}
+
+.vovels-box {
+    display: flex;
+}
+
+.piece-wrapper {
+   width: 4rem;
+   height: 4rem;
+   font-size: 1.3rem;
+   
+   border: 1px solid black;
+   transition: all .3s ease-in;
+}
+
+.piece-wrapper:hover {
+    transform: translateY(-.6rem);
+}
+

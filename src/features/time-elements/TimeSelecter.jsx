@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import Select from "react-select";
 import { setSelectedTime } from './TimeSelecterSlice';
 import React, { useEffect, useState } from 'react';
+import './timer.scss'
 
 const _options = [
     { value: '5:00', label: '5:00' },
@@ -28,9 +29,8 @@ const _handleChange = e => {
     setValue(value)
 }
   return (
-    <div>
+    <div className='time-set-line'>
          <Select 
-         className='time-setter'
          options={_options}
          onChange={e => _handleChange(e)}
       /> 

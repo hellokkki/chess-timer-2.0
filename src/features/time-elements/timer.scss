@@ -1,0 +1,63 @@
+.time-set-line {
+    width: 50rem;
+}
+
+.wood-texture {
+    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 1px, transparent 6px);
+    background-size: 8px 8px;
+    background-color: #36261b;
+}
+
+$time-top: 2rem;
+$time-left: 10rem;
+
+$btn-top: 74%;
+$btn-left: 80%;
+$btn-width: 6rem;
+$btn-height: 4rem;
+
+
+.chess-timer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    &--clock {
+       width: 30rem;
+       height: 15rem; 
+       border: 1px solid black;
+       position: relative;
+
+       &__time {
+         position: absolute;
+         top: $time-top;
+         left: $time-left;
+
+         &--white {
+            background-color: white;
+         }
+         &--black {
+            background-color: white
+         };
+       }
+
+       &__btn {
+        width: $btn-width;
+        height: $btn-height;
+        position: absolute;
+        top: $btn-top;
+        left: $btn-left;
+
+        &--black {
+            background-image: url(http://www.zingerbugimages.com/backgrounds/brown_marble_background_seamless.jpg);
+            background-position: center;
+        }
+
+        &--white {
+            background-image: url(http://www.zingerbugimages.com/backgrounds/black_abstract_stone_pattern_tileable.jpg);
+            background-position: center;
+        }
+       }
+    }
+}
+
